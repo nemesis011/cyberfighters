@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;
+        background-image: url('https://cdn.discordapp.com/attachments/741006584510939216/1166345906669486090/IMG_4304.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      opacity: 65%;
+        color: white;
+       }
+  form {border: 3px solid #f1f1f1;}
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+      width: 40%;
+        border-radius: 50%;
+      }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+    p {
+      text-align: center;
+      text-shadow: 0 0 8px #FF0000, 0 0 3px #FF0000, 0 0 12px #FF0000, 0 0 10px white;
+      font-size: 28px;
+      color: black;
+
+    }
+    #borderimage {
+      border: 20px solid transparent;
+      padding: 5px;
+      border-image: url(https://cdn.discordapp.com/attachments/661258334816567315/1174587889359798332/image.png) 20% round;
+      margin-bottom: -10px;
+    }
+  </style>
+    <title>Login</title>
+</head>
+<body>
+  <p id="borderimage">Wrestling GlobalChat Login</p>
+    <form id="loginForm">
+   <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="register.html">Register Here</a></span>
+    </div>
+  </form>
+    <script src="/login.js"></script>
+</body>
+</html>
